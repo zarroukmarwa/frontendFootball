@@ -43,31 +43,18 @@ import { XhrInterceptor } from './xhr.interceptor';
     VideosComponent,
     OurBlogComponent,
     HomeComponent,
-    
     ContacttComponent,
-    
     MatcheComponent,
-    
     AllMatchesComponent,
-    
     AddMatchComponent,
-    
     AddPlayerComponent,
-    
     AllPlayerComponent,
-    
     AdminComponent,
-    
     PlayersComponent,
-    
     DisplayMatchComponent,
-    
     DisplayPlayerComponent,
-    
     EditMatchComponent,
-    
     EditPlayerComponent,
-    
     EditAddComponent
   ],
   imports: [
@@ -75,8 +62,6 @@ import { XhrInterceptor } from './xhr.interceptor';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-   //InMemoryWebApiModule.forRoot(DataService),
-
     AppRoutingModule
   ],
   providers: [
