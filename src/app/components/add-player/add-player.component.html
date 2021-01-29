@@ -1,0 +1,68 @@
+
+    <div class="hero overlay" style="background-image: url('assets/images/bg_3.jpg');">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-9 mx-auto text-center">
+              <h1 class="text-white">Add-Player </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="site-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <form [formGroup] ='addplayerform'>
+                <div class="form-group">
+                  <input type="text" class="form-control"  formControlName='playerName' placeholder="player Name">
+                </div>
+                <div *ngIf='addplayerform.controls["playerName"].invalid && 
+                (addplayerform.controls["playerName"].dirty || addplayerform.controls["playerName"].touched)'>
+                  <div *ngIf="addplayerform.controls['playerName'].errors.required" class="text-danger">
+                    player Name is required
+                  </div>
+                  <div *ngIf="addplayerform.controls['playerName'].errors.minlength" class="text-danger">
+                    player Name must have at least 5 chars
+                  </div>
+                </div>
+                <div class="form-group">
+                <input type="number" class="form-control" formControlName='numPlayer' placeholder="N° Player">
+                </div>
+                <div *ngIf='addplayerform.controls["numPlayer"].invalid && 
+                (addplayerform.controls["numPlayer"].dirty || addplayerform.controls["numPlayer"].touched)'>
+                  <div *ngIf="addplayerform.controls['numPlayer'].errors.required" class="text-danger">
+                    N°Player is required
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control"formControlName='postePlayer' placeholder="Poste Player" >
+                </div>
+                <div *ngIf='addplayerform.controls["postePlayer"].invalid && 
+                (addplayerform.controls["postePlayer"].dirty || addplayerform.controls["postePlayer"].touched)'>
+                  <div *ngIf="addplayerform.controls['postePlayer'].errors.required" class="text-danger">
+                    Poste Player is required
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control"formControlName='teamPlayer'  placeholder="Team Player">
+                </div>
+                <div *ngIf='addplayerform.controls["teamPlayer"].invalid && 
+                (addplayerform.controls["teamPlayer"].dirty || addplayerform.controls["teamPlayer"].touched)'>
+                  <div *ngIf="addplayerform.controls['teamPlayer'].errors.required" class="text-danger">
+                    Team Player is required
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <button class="btn btn-primary py-3 px-5" (click)="addPlayer()" >  Add-Player </button>
+                </div>
+              </form>  
+            </div>
+           
+          </div>
+        </div>
+      </div>
+  
+  
