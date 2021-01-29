@@ -8,9 +8,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { WorldCupComponent } from './components/world-cup/world-cup.component';
-import { ResultatComponent } from './components/resultat/resultat.component';
-import { VideosComponent } from './components/videos/videos.component';
-import { OurBlogComponent } from './components/our-blog/our-blog.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContacttComponent } from './components/contactt/contactt.component';
@@ -39,9 +36,6 @@ import { XhrInterceptor } from './xhr.interceptor';
     LoginComponent,
     SignupComponent,
     WorldCupComponent,
-    ResultatComponent,
-    VideosComponent,
-    OurBlogComponent,
     HomeComponent,
     ContacttComponent,
     MatcheComponent,
