@@ -7,10 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
-import { NewsComponent } from './components/news/news.component';
 import { WorldCupComponent } from './components/world-cup/world-cup.component';
 import { ResultatComponent } from './components/resultat/resultat.component';
-import { NextMatchComponent } from './components/next-match/next-match.component';
 import { VideosComponent } from './components/videos/videos.component';
 import { OurBlogComponent } from './components/our-blog/our-blog.component';
 import { HomeComponent } from './components/home/home.component';
@@ -40,10 +38,8 @@ import { XhrInterceptor } from './xhr.interceptor';
     HeaderComponent,
     LoginComponent,
     SignupComponent,
-    NewsComponent,
     WorldCupComponent,
     ResultatComponent,
-    NextMatchComponent,
     VideosComponent,
     OurBlogComponent,
     HomeComponent,
