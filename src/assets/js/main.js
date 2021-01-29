@@ -255,11 +255,9 @@ jQuery(document).ready(function($) {
 
 		$('#date-countdown, #date-countdown2').countdown('2033/10/10', function(event) {
 		  var $this = $(this).html(event.strftime(''
-		    + '<span class="countdown-block"><span class="label">%w</span> weeks </span>'
-		    + '<span class="countdown-block"><span class="label">%d</span> days </span>'
-		    + '<span class="countdown-block"><span class="label">%H</span> hr </span>'
-		    + '<span class="countdown-block"><span class="label">%M</span> min </span>'
-		    + '<span class="countdown-block"><span class="label">%S</span> sec</span>'));
+		    + '<span class="countdown-block"><span class="label">20</span> Matchs </span>'
+		    + '<span class="countdown-block"><span class="label">50d</span> Joeurs </span>'
+		    + '<span class="countdown-block"><span class="label">10</span> Inscris </span>'));
 		});
 				
 	};
