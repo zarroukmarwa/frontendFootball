@@ -5,8 +5,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class PlayerService {
-  playerUrl =    'https://zarrouk-backend.herokuapp.com/api/players';
-
+  playerUrl =    'http://localhost:8080/api/players';
+  ;
   constructor(private httpClient: HttpClient) { }
 
 

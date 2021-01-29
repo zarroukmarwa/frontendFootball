@@ -6,14 +6,14 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
 
-  userUrl = 'https://zarrouk-backend.herokuapp.com/api/users';
+  userUrl = 'http://localhost:8080/api/users';
   constructor(private httpClient: HttpClient) { }
 
   addUser(user: any) {
     return this.httpClient.post(this.userUrl, user);
   }
   login(user: any) {
-    return this.httpClient.post<any>('https://zarrouk-backend.herokuapp.com/login', user);
+    return this.httpClient.post<any>('http://localhost:8080/login', user);
 
   }
 }

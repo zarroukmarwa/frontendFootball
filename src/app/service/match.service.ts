@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class MatchService {
-  macthUrl = 'https://zarrouk-backend.herokuapp.com/api/matches';
+  macthUrl = 'http://localhost:8080/api/matches';
   constructor(private httpClient: HttpClient) { }
 
   getAllMatches() {
